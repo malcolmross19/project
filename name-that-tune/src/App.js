@@ -107,7 +107,7 @@ class App extends Component {
               <h1>Name That Tune</h1>
             </div>}
 
-          <a href="">Request Access From Spotify</a>
+          <a href="http://malcolmross19.github.io/project/">Request Access From Spotify</a>
 
         </div>
 
