@@ -14,6 +14,8 @@ class App extends Component {
       spotifyApi.setAccessToken(token);
     }
     this.state = {
+      token: '',
+      refrest_token: '',
       loggedIn: token ? true : false,
       nowPlaying: { name: 'Not Checked', albumArt: ''},
       currentCount: 5,
@@ -91,6 +93,7 @@ class App extends Component {
     this.toggleInfo();
   }
 
+
   render() {
     return (
       <div className="App">
@@ -105,7 +108,7 @@ class App extends Component {
               <h1>Name That Tune</h1>
             </div>}
 
-          <a href="http://localhost:8888">Request Access From Spotify</a>
+          <a href="authorization_code.html">Request Access From Spotify</a>
         </div>
 
           <div className="Body">
