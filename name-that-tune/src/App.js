@@ -109,54 +109,55 @@ class App extends Component {
             </div>}
 
           <a href="authorization_code.html">Request Access From Spotify</a>
+
         </div>
 
           <div className="Body">
             <hr />
-            {this.state.loggedIn && !this.state.clockHidden &&
+
                 <ReactCountdownClock
                   seconds={30}
                   color='#5CC8FF'
                   alpha={0.9}
                   size={720}
                   onComplete={() => this.toggleInfo()}
-                />}
-            {this.state.loggedIn && !this.state.songInfoHidden &&
+                />
+
               <div>
                 <h1 className="Header">How Did You Do?</h1>
                 <div className="NowPlaying">Now Playing: { this.state.nowPlaying.name }</div>
-              </div>}
+              </div>
 
             <br />
 
-            {this.state.loggedIn && !this.state.songInfoHidden &&
+
               <div>
                 <img src={this.state.nowPlaying.albumArt} style={{ height: 650 }}/>
-              </div>}
+              </div>
 
-            {this.state.loggedIn && !this.state.clockHidden &&
+
               <form onSubmit={this.handleSubmit}>
                 <label>
                   <input type="text" value={this.state.answer} placeholder="Enter Your Answer Here" onChange={this.handleChange} />
                 </label>
                 <input type="submit" value="Check Answer" />
-              </form>}
+              </form>
 
             <br />
 
-            {this.state.loggedIn && !this.state.songInfoHidden &&
+
               <div>
                 <h1>Your Answer:<br /></h1>
                 <div className="Answer">{this.state.answer}</div>
-              </div>}
+              </div>
 
             <br />
 
-            {this.state.loggedIn &&
+
               <button className="NowPlayingButton" onClick={() => this.buttonClick()}>
                 Check Now Playing
               </button>
-            }
+            
           </div>
       </div>
     );
