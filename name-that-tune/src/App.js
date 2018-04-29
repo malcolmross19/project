@@ -93,7 +93,6 @@ class App extends Component {
     this.toggleInfo();
   }
 
-
   render() {
     return (
       <div className="App">
@@ -108,7 +107,7 @@ class App extends Component {
               <h1>Name That Tune</h1>
             </div>}
 
-          <a href="authorization_code.html">Request Access From Spotify</a>
+          <a href="">Request Access From Spotify</a>
 
         </div>
 
@@ -157,7 +156,7 @@ class App extends Component {
               <button className="NowPlayingButton" onClick={() => this.buttonClick()}>
                 Check Now Playing
               </button>
-            
+
           </div>
       </div>
     );
